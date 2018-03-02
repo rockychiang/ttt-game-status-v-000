@@ -19,7 +19,8 @@ def won?(board)
     positions = [
       board[win_combination[0]],
       board[win_combination[1]],
-      board[win_combination[2]]]
+      board[win_combination[2]]
+    ]
 
     if positions.include?(" ")
       false
