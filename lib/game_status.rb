@@ -21,6 +21,7 @@ def won?(board)
     win_index_3 = win_combination[2]
 
     positions = [board[win_index_1],board[win_index_2],board[win_index_3]]
-      positions.all? {|position| position == positions[0]}
+    positions.all? {|position| position_taken?(positions,position)}
+    positions.all? {|position| position == positions[0]}
   end
 end
