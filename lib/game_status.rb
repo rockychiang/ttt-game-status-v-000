@@ -33,3 +33,7 @@ end
 def full?(board)
   !board.include?(" ")
 end
+
+def draw?(board)
+  if board.full? && !board.won?
+end
