@@ -21,7 +21,7 @@ def won?(board)
     win_index_3 = win_combination[2]
 
     positions = [board[win_index_1],board[win_index_2],board[win_index_3]]
-    if positions.include?(" ") do
+    if positions.include?(" ")
       false
     else
       positions.all? {|position| position == positions[0]}
