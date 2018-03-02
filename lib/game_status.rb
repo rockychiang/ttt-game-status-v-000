@@ -22,4 +22,5 @@ def won?(board)
 
     positions = [board[win_index_1],board[win_index_2],board[win_index_3]]
     positins.all? {|position| position == "X"}
+  end
 end
