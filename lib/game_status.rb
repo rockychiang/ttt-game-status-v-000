@@ -48,6 +48,10 @@ def over?(board)
 end
 
 def winner(board)
-  winning_array = won?(board)
-  player = board[winning_array[0]]
+  if won?(board)
+    winning_array = won?(board)
+    player = board[winning_array[0]]
+  else
+    nil
+  end
 end
