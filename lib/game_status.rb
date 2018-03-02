@@ -46,3 +46,8 @@ def over?(board)
     true
   end
 end
+
+def winner(board)
+  winning_array = won?(board)
+  player = board[winning_array[0]]
+end
