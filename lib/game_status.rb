@@ -21,9 +21,6 @@ def won?(board)
     win_index_3 = win_combination[2]
 
     positions = [board[win_index_1],board[win_index_2],board[win_index_3]]
-    if positions.none? {|position| position == "X"}
-      false
-    else
-    end
+    positions.all? {|position| position == "X"}
   end
 end
